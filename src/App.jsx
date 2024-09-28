@@ -1,8 +1,10 @@
+import CommentsSection from "./components/CommentsSection"
 import FooterPage from "./components/Footer"
 import Header from "./components/Header"
 import HeroSection from "./components/HeroSection"
 import MenuSection from "./components/MenuSection"
 import StorySection from "./components/StorySection"
+import ContactSection from "./components/ContactSection"
 
 function App () {
   const itemsHeader = ['Home', 'Cerita Kami', 'Menu', 'Kontak']
@@ -57,6 +59,39 @@ function App () {
       img : "https://asset.kompas.com/crops/LiyS15q5anDuX53HR5EhvUMRapU=/0x0:1000x667/750x500/data/photo/2019/10/17/5da842819a10a.jpg"
     },
   ]
+  const commentsItem = [
+    {
+      name: "Michael Gough",
+      position: "CEO of Drip",
+      comment: "Drip bukan sekadar coffee shop—ini adalah komunitas. Kami membangun tempat ini untuk menyatukan orang-orang, dan kami bangga dengan pengalaman yang kami tawarkan kepada setiap tamu.",
+      img: "https://res.cloudinary.com/dk0z4ums3/image/upload/v1695608365/attached_image/sebelum-mencintai-orang-lain-yuk-cintai-dirimu-sendiri-terlebih-dahulu.jpg"
+    },
+    {
+      name: "Anna Williams",
+      position: "Manajer Drip",
+      comment: "Jantung dari Drip adalah suasana yang hangat dan mengundang. Setiap hari, kami berusaha menciptakan ruang di mana orang merasa nyaman, baik mereka menikmati kopi pertama mereka atau sedang bekerja mengerjakan ide besar berikutnya.",
+      img: "https://res.cloudinary.com/dk0z4ums3/image/upload/v1695608365/attached_image/sebelum-mencintai-orang-lain-yuk-cintai-dirimu-sendiri-terlebih-dahulu.jpg"
+    },
+    {
+      name: "Dewa Saputra",
+      position: "Kepala Barista Drip",
+      comment: "Meracik secangkir kopi yang sempurna adalah passion saya, dan Drip memberi saya kebebasan untuk mengeksplorasi rasa dan teknik seduh yang unik. Setiap cangkir dibuat dengan hati-hati, dan saya berharap pelanggan merasakan dedikasi itu di setiap tegukan.",
+      img: "https://res.cloudinary.com/dk0z4ums3/image/upload/v1695608365/attached_image/sebelum-mencintai-orang-lain-yuk-cintai-dirimu-sendiri-terlebih-dahulu.jpg"
+    },
+    {
+      name: "Sarah Lee",
+      position: "Barista di Drip",
+      comment: "Hal yang saya sukai dari bekerja di Drip adalah hubungan yang kami miliki dengan pelanggan. Ini lebih dari sekadar membuat kopi—ini tentang membuat hari seseorang menjadi sedikit lebih cerah, satu cangkir pada satu waktu.",
+      img: "https://res.cloudinary.com/dk0z4ums3/image/upload/v1695608365/attached_image/sebelum-mencintai-orang-lain-yuk-cintai-dirimu-sendiri-terlebih-dahulu.jpg"
+    },
+    {
+      name: "Albert Ray",
+      position: "Barista di Drip",
+      comment: "Drip punya tempat istimewa di hati saya karena orang-orangnya. Tim, pelanggan, dan kopinya—semuanya menyatu untuk menciptakan sesuatu yang benar-benar spesial. Saya bangga menjadi bagian dari perjalanan itu.",
+      img: "https://res.cloudinary.com/dk0z4ums3/image/upload/v1695608365/attached_image/sebelum-mencintai-orang-lain-yuk-cintai-dirimu-sendiri-terlebih-dahulu.jpg"
+    }
+  ];
+  
 
 
   return (
@@ -65,6 +100,8 @@ function App () {
       <HeroSection heroItem={heroItem}/>
       <StorySection storyItemHead={storyItemHead} storyItemText={storyItemText}/>
       <MenuSection menuItem={menuItem}/>
+      <CommentsSection commentsItem={commentsItem}/>
+      <ContactSection numberPhone={numberPhone} email={email} location={location}/>
       <FooterPage numberPhone={numberPhone} email={email} location={location}/>
     </>
   )

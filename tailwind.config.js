@@ -12,8 +12,17 @@ export default {
         primary: '#EEC81A',
         secondary: '#ECF1FA',
         dark: '#201D1E',
-        
-      }, 
+      },
+      animation: {
+        marquee: "marquee var(--duration, 30s) linear infinite",
+      },
+
+      keyframes: {
+        marquee: {
+          to: { transform: "translateX(-50%)" },
+        },
+      },
+      
     },
   },
   plugins: [
