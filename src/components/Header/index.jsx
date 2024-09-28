@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
 import {
   Button,
@@ -24,8 +23,8 @@ const Header = (props) => {
           </NavbarBrand>
           <NavbarToggle />
           <NavbarCollapse className="md:flex md:justify-center items-center">
-            {items.map((item) => {
-              return <HeaderItem item={item} />;
+            {items.map((item, index) => {
+              return <HeaderItem key={index} item={item} />;
             })}
             <Button className="border-[1px] rounded-full bg-white text-dark border-primary hover:bg-primary focus:ring-0 enabled:hover:bg-primary hover:text-white">
               Download App

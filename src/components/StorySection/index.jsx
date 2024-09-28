@@ -1,7 +1,7 @@
+/* eslint-disable react/prop-types */
 import { Blockquote } from "flowbite-react";
-import React from "react";
-import { IoIosArrowForward } from "react-icons/io";
-import CustomButton from "../ui/customButton";
+import CustomButton from "../ui/customButton.jsx";
+import JudulText from "../ui/judulText.jsx";
 
 const StorySection = (props) => {
     const { storyItemHead , storyItemText} = props;
@@ -10,9 +10,7 @@ const StorySection = (props) => {
       <div className="bg-[url('/Group21.svg')] bg-cover">
         <div className="container mx-auto">
           <div className="flex flex-col px-10 py-20 text-center gap-9">
-            <p className="text-4xl font-extrabold tracking-[.25em] sm:text-5xl hover:text-primary duration-1000">
-              Cerita Kami
-            </p>
+            <JudulText text={"Certia Kami"}></JudulText>
             <Blockquote >
               {storyItemHead }
             </Blockquote>

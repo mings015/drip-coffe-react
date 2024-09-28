@@ -1,4 +1,4 @@
-import React from 'react';
+/* eslint-disable react/prop-types */
 import { IoIosArrowForward } from 'react-icons/io';
 
 const CustomButton = ({ text = "Baca Selengkapnya", href = "#" }) => {
@@ -9,7 +9,6 @@ const CustomButton = ({ text = "Baca Selengkapnya", href = "#" }) => {
           {text}
           <IoIosArrowForward
             className="pl-2 w-7"
-            name="chevron-forward-outline"
           />
         </button>
       </a>

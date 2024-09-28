@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
 import { Carousel } from "flowbite-react";
 import HeroItem from "../HeroItem";
@@ -9,9 +8,9 @@ const HeroSection = (props) => {
     <div className="container mx-auto">
       <div className="h-[650px]">
         <Carousel leftControl="<" rightControl=">" className="text-primary p-6">
-          {heroItem.map ((item) => {
+          {heroItem.map ((item, index) => {
             return (
-                <HeroItem item={item}/>
+                <HeroItem key={index} item={item}/>
             )
           })}
         </Carousel>
